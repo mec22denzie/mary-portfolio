@@ -1,0 +1,172 @@
+/* ================================
+   GLOBAL COLOR PALETTE
+================================ */
+
+:root {
+  --primary: #06b6d4;
+  --primary-hover: #0891b2;
+  --primary-light: #67e8f9;
+
+  --background: #111827;
+  --background-dark: #0b1120;
+  --surface: #1f2937;
+  --surface-light: #273449;
+
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+
+  --border: #374151;
+  --white: #ffffff;
+
+  --shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  --transition: 0.3s ease;
+}
+
+/* ================================
+   RESET
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Poppins",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================================
+   REUSABLE CLASSES
+================================ */
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  background-color: #06131d;
+  isolation: isolate;
+}
+
+.site-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(6, 182, 212, 0.09),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 45%,
+      rgba(8, 145, 178, 0.08),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #06131d 0%,
+      #071823 50%,
+      #06111a 100%
+    );
+}
+
+.background-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.25;
+  animation: glowFloat 12s ease-in-out infinite;
+}
+
+.glow-one {
+  top: 10%;
+  right: 10%;
+  width: 380px;
+  height: 380px;
+  background-color: #06b6d4;
+}
+
+.glow-two {
+  bottom: 8%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background-color: #0891b2;
+  animation-delay: -5s;
+}
+
+.background-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+}
+
+.site-content {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes glowFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-30px, 25px) scale(1.08);
+  }
+}

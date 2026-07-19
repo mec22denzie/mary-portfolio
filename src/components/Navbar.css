@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(5, 18, 28, 0.96);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.navbar-container {
+  width: min(92%, 1180px);
+  min-height: 76px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navbar-logo span {
+  color: var(--primary);
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  list-style: none;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  position: relative;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.navbar-links a:not(.resume-button)::after {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background-color: var(--primary);
+  content: "";
+  transition: width var(--transition);
+}
+
+.navbar-links a:hover {
+  color: var(--primary);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.resume-button {
+  padding: 10px 17px;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 7px;
+  color: var(--background-dark) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 7px 20px rgba(6, 182, 212, 0.25);
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.resume-button:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--background-dark) !important;
+  transform: translateY(-2px);
+}
+
+.resume-button::after {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .navbar-links {
+    gap: 16px;
+  }
+
+  .navbar-links a {
+    font-size: 0.76rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar-container {
+    min-height: 68px;
+  }
+
+  .navbar-links li:not(:last-child) {
+    display: none;
+  }
+}
