@@ -10,7 +10,7 @@ function Hero() {
 
           <h1 className="hero-title">Mary Eden Ciasico</h1>
 
-          <h2 className="hero-role">Web Developer</h2>
+          <h2 className="hero-role">System Design Engineer/Web Developer</h2>
 
           <p className="hero-description">
             I build modern, responsive, and user-friendly web applications
