@@ -23,7 +23,7 @@ function Contact() {
 
           <a href="tel:+15191234567">
             <span className="contact-icon">☎</span>
-            <span>+1 (519) 123-4567</span>
+            <span>+1 (437) 553-7039</span>
           </a>
 
           <div className="contact-detail-item">
@@ -32,12 +32,12 @@ function Contact() {
           </div>
 
           <a
-            href="https://www.linkedin.com/in/your-linkedin-name"
+            href="https://linkedin.com/in/mary-ciasico"
             target="_blank"
             rel="noreferrer"
           >
             <span className="contact-icon">in</span>
-            <span>linkedin.com/in/your-linkedin-name</span>
+            <span>linkedin.com/in/mary-ciasico</span>
           </a>
         </div>
 

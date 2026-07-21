@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import "./Hero.css";
 
 function Hero() {
@@ -10,7 +12,10 @@ function Hero() {
 
           <h1 className="hero-title">Mary Eden Ciasico</h1>
 
-          <h2 className="hero-role">System Design Engineer/Web Developer</h2>
+          <h2 className="hero-role">System Design Engineer/ 
+            <br />
+            Web Developer
+          </h2>
 
           <p className="hero-description">
             I build modern, responsive, and user-friendly web applications
@@ -28,25 +33,28 @@ function Hero() {
 
           <div className="hero-socials">
             <a
-              href="https://github.com/"
+              href="https://github.com/mec22denzie"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
             >
-              GH
+              <FaGithub />
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://linkedin.com/in/mary-ciasico"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
             >
-              in
+              <FaLinkedinIn />
             </a>
 
-            <a href="mailto:your-email@example.com" aria-label="Email">
-              ✉
+            <a
+              href="mailto:maryciasico@yahoo.com"
+              aria-label="Email"
+            >
+              <MdEmail />
             </a>
           </div>
         </div>
