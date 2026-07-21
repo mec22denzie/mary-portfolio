@@ -16,9 +16,9 @@ function Contact() {
         </div>
 
         <div className="contact-details">
-          <a href="mailto:maryeden.ciasico@gmail.com">
+          <a href="mailto:maryciasico@yahoo.com">
             <span className="contact-icon">✉</span>
-            <span>maryeden.ciasico@gmail.com</span>
+            <span>maryciasico@yahoo.com</span>
           </a>
 
           <a href="tel:+15191234567">
