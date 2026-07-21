@@ -18,8 +18,10 @@ function Hero() {
           </h2>
 
           <p className="hero-description">
-            I build modern, responsive, and user-friendly web applications
-            using React, JavaScript, and other modern technologies.
+            With a background in automotive systems design and a passion for web
+            development, I build responsive and user-friendly applications using
+            React, JavaScript, and other modern technologies. I enjoy creating
+            practical solutions that improve everyday experiences.
           </p>
 
           <div className="hero-buttons">
