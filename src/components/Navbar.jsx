@@ -17,7 +17,7 @@ function Navbar() {
             </li>
 
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/aboutMe">About</NavLink>
             </li>
 
             <li>
