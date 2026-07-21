@@ -14,7 +14,7 @@ const projects = [
     description:
       "A responsive career management application that helps users organize job applications and monitor their progress.",
     tech: "Wordpress",
-    live: "http://localhost/info-3163/project/wordpress/project/",
+    live: "https://maryportfolio.rf.gd",
     github: "https://github.com/mec22denzie/careerTracker",
   },
 ];

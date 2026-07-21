@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
           <span>MC</span>
-          Mary Ciasico
+          
         </NavLink>
 
         <nav>
