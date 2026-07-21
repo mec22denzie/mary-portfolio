@@ -22,7 +22,7 @@
 
 .about-image-wrapper {
   position: relative;
-  max-width: 430px;
+  max-width: 300px;
 }
 
 .about-image-wrapper::before {
@@ -38,7 +38,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   object-fit: cover;
   object-position: center top;
   border-radius: 24px;
@@ -48,7 +48,7 @@
 .about-label {
   margin-bottom: 14px;
   color: #22d3ee;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -156,7 +156,8 @@
 
 .about-card p {
   color: #aebfca;
-  line-height: 1.75;
+  font-size: 1.15rem;
+  line-height: 2;
 }
 
 .about-journey {
@@ -164,22 +165,32 @@
   margin: 0 auto 100px;
   padding: 55px;
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 60px;
+  grid-template-columns: 0.9fr 1.1fr;;
+  gap: 70px;
+  align-items: start;
   border-radius: 24px;
   background: #0e2a37;
 }
 
-.about-journey h2,
+.about-journey h2
+{
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  max-width: 430px;
+  line-height: 1.5;
+}
+
 .about-skills h2 {
   font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .journey-content p {
-  margin-bottom: 18px;
-  color: #b6c6d1;
-  line-height: 1.8;
+  color: #d6e3ea;
+  font-size: 1.15rem;
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 24px;
+  
 }
 
 .about-skills {

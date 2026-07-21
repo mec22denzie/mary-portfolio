@@ -18,10 +18,16 @@ function Hero() {
           </h2>
 
           <p className="hero-description">
-            With a background in automotive systems design and a passion for web
+            {/* With a background in automotive systems design and a passion for web
             development, I build responsive and user-friendly applications using
             React, JavaScript, and other modern technologies. I enjoy creating
-            practical solutions that improve everyday experiences.
+            practical solutions that improve everyday experiences. */}
+            I am an automotive systems design engineer and web developer who enjoys 
+            solving technical problems and creating user-friendly digital experiences. 
+            I enjoy exploring new technologies, solving challenging problems, 
+            and continuously expanding my skills. I believe the best solutions 
+            come from combining technical expertise with creativity, collaboration, 
+            and a passion for continuous learning.
           </p>
 
           <div className="hero-buttons">

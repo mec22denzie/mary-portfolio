@@ -17,7 +17,7 @@ function AboutMe() {
           <p className="about-label">About Me</p>
 
           <h1>
-            Engineer by Training.
+            Engineer by Profession.
             <span> Developer by Passion.</span>
           </h1>
 
@@ -89,22 +89,31 @@ function AboutMe() {
       <section className="about-journey">
         <div>
           <p className="about-label">My Journey</p>
-          <h2>From automotive design to digital development</h2>
+          <br />
+          <h2>From 
+            <br />
+            automotive design
+            <br />
+            to digital
+            <br />
+            development
+            </h2>
         </div>
 
         <div className="journey-content">
           <p>
-            My engineering career taught me how to analyze complex systems,
-            communicate across international teams, review technical
-            requirements, and solve problems with accuracy and attention to
-            detail.
+            My engineering career taught me how to analyze complex systems, 
+            communicate across international teams, review technical requirements, 
+            and solve problems with accuracy and attention to detail.
           </p>
 
           <p>
-            Web development gave me a new way to apply those strengths. I now
-            enjoy turning ideas into functional interfaces and continuously
-            learning new tools that connect engineering, technology, and
-            creativity.
+            My career in automotive systems design engineering strengthened my
+            analytical thinking, precision, and collaboration skills. Pursuing web
+            development gave me the opportunity to combine my engineering experience
+            with software development, allowing me to build modern web applications
+            while continuously learning new technologies and solving real-world
+            problems.
           </p>
         </div>
       </section>

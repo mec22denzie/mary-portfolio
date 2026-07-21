@@ -1,5 +1,6 @@
 import "./About.css";
 import profileImage from "../assets/profile.png";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -30,9 +31,9 @@ function About() {
             efficient, and user-friendly web applications.
           </p>
 
-          <a href="#contact" className="about-button">
+          <Link to="/AboutMe" className="about-button">
             ♙ More About Me
-          </a>
+          </Link>
         </div>
 
         <div className="about-features">
