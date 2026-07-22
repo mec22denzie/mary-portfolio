@@ -21,11 +21,11 @@ function Navbar() {
             </li>
 
             <li>
-              <a href="/#skills">Skills</a>
+              <NavLink to="/skill">Skills</NavLink>
             </li>
 
             <li>
-              <a href="/#experience">Experience</a>
+              <NavLink to="/experience">Experience</NavLink>
             </li>
 
             <li>

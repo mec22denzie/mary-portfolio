@@ -30,7 +30,7 @@ const projects = [
     description:
       "A responsive UI pattern library created for the Command TV dashboard, featuring typography standards, color systems, reusable interface elements, chart designs, and layout patterns.",
     tech: "HTML5 • CSS3 • Bootstrap • JavaScript • jQuery • Power BI",
-    live: "https://command-tv-ui-pattern-library.vercel.app/",
+    live: "https://command-tv-ui-pattern-library.vercel.app",
     github: "https://github.com/mec22denzie/command-tv-ui-pattern-library",
   },
   {
