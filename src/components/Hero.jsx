@@ -10,7 +10,7 @@ function Hero() {
         <div className="hero-content">
           <p className="hero-intro">Hello, I’m</p>
 
-          <h1 className="hero-title">Mary Eden Ciasico</h1>
+          <h1 id="tour-name" className="hero-title">Mary Eden Ciasico</h1>
 
           <h2 className="hero-role">System Design Engineer/ 
             <br />

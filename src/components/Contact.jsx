@@ -49,11 +49,11 @@ function Contact() {
         <div className="contact-intro">
           <p className="contact-label">GET IN TOUCH</p>
 
-          <h2>Let’s Work Together</h2>
+          <h2 id="tour-contact">Let's Work Together</h2>
 
           <p>
-            I’m open to new opportunities. Whether you have a question or
-            just want to say hello, I’ll try my best to get back to you!
+            I'm open to new opportunities. Whether you have a question or
+            just want to say hello, I'll try my best to get back to you!
           </p>
         </div>
 

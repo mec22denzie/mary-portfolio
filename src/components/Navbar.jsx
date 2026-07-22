@@ -10,7 +10,7 @@ function Navbar() {
           
         </NavLink>
 
-        <nav>
+        <nav id="tour-navbar">
           <ul className="navbar-links">
             <li>
               <NavLink to="/">Home</NavLink>

@@ -11,6 +11,7 @@ import SkillPage from "./pages/SkillPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import PortfolioTour from "./components/PortfolioTour";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       </div>
 
       <Navbar />
+
+      <PortfolioTour />
 
       <main className="site-content">
         <Routes>

@@ -17,7 +17,7 @@ function About() {
         <div className="about-content">
           <p className="about-label">ABOUT ME</p>
 
-          <h2 className="about-title">
+          <h2 id="tour-about" className="about-title">
             Engineer by Profession.
             <br />
             Developer by <span>Passion.</span>

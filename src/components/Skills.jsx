@@ -55,7 +55,7 @@ function Skills() {
       <div className="skills-container">
         <div className="skills-heading">
           <p className="skills-label">MY SKILLS</p>
-          <h2>Technologies I Work With</h2>
+          <h2 id="tour-skill">Technologies I Work With</h2>
         </div>
 
         <div className="skills-slider-wrapper">
