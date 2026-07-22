@@ -1,39 +1,72 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <NavLink to="/" className="navbar-logo">
+        <NavLink to="/" className="navbar-logo" onClick={closeMenu}>
           <span>MC</span>
-          
         </NavLink>
 
-        <nav id="tour-navbar">
+        <button
+          type="button"
+          className={`menu-button ${menuOpen ? "open" : ""}`}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(previous => !previous)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <nav
+          id="tour-navbar"
+          className={`navbar-menu ${menuOpen ? "open" : ""}`}
+        >
           <ul className="navbar-links">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" onClick={closeMenu}>
+                Home
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/aboutMe">About</NavLink>
+              <NavLink to="/aboutMe" onClick={closeMenu}>
+                About
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/skill">Skills</NavLink>
+              <NavLink to="/skill" onClick={closeMenu}>
+                Skills
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/experience">Experience</NavLink>
+              <NavLink to="/experience" onClick={closeMenu}>
+                Experience
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/projects" onClick={closeMenu}>
+                Projects
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact" onClick={closeMenu}>
+                Contact
+              </NavLink>
             </li>
 
             <li>
@@ -41,6 +74,7 @@ function Navbar() {
                 href="/resume.pdf"
                 className="resume-button"
                 download
+                onClick={closeMenu}
               >
                 ↓ Download Resume
               </a>

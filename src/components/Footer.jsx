@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -7,12 +8,12 @@ function Footer() {
         <p>© 2026 Mary Eden Ciasico. All rights reserved.</p>
 
         <nav className="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/aboutMe">About</NavLink>
+          <NavLink to="/skill">Skills</NavLink>
+          <NavLink to="/experience">Experience</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
 
         <a
