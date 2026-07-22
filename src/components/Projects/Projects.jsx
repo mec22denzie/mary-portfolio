@@ -41,6 +41,14 @@ const projects = [
     live: "https://command-tv-dashboard.vercel.app/",
     github: "https://github.com/mec22denzie/Info_3171_group_project",
   },
+  {
+    title: "Basket Shot Game",
+    description:
+      "A responsive basketball shooting game built with React Native and Expo for the web. Players control a moving basket, avoid flying bird obstacles, and score points by catching basketballs launched from an animated cannon. The game features smooth physics powered by Matter.js, sound effects, score tracking, responsive controls, and a game-over scoreboard.",
+    tech: "Expo • React Native • Matter.js • JavaScript",
+    live: "https://mobile-ball-game-61zb.vercel.app/",
+    github: "https://github.com/mec22denzie/mobile-ball-game",
+  },
 ];
 
 function Projects() {
