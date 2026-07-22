@@ -1,6 +1,48 @@
+import { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    setLoading(true);
+    setSubmitted(false);
+    setError("");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://formspree.io/f/mdaqdjbr",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("The message could not be sent.");
+      }
+
+      setSubmitted(true);
+      form.reset();
+    } catch (err) {
+      setError(
+        "Sorry, your message could not be sent. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
@@ -10,8 +52,8 @@ function Contact() {
           <h2>Let’s Work Together</h2>
 
           <p>
-            I’m open to new opportunities. Whether you have a question or just
-            want to say hello, I’ll try my best to get back to you!
+            I’m open to new opportunities. Whether you have a question or
+            just want to say hello, I’ll try my best to get back to you!
           </p>
         </div>
 
@@ -21,7 +63,7 @@ function Contact() {
             <span>maryciasico@yahoo.com</span>
           </a>
 
-          <a href="tel:+15191234567">
+          <a href="tel:+14375537039">
             <span className="contact-icon">☎</span>
             <span>+1 (437) 553-7039</span>
           </a>
@@ -43,8 +85,7 @@ function Contact() {
 
         <form
           className="contact-form"
-          action="https://formspree.io/f/mdaqdjbr"
-          method="POST"
+          onSubmit={handleSubmit}
         >
           <input
             type="text"
@@ -65,12 +106,34 @@ function Contact() {
             placeholder="Your Message"
             rows="5"
             required
-          ></textarea>
+          />
 
-          <button type="submit" className="contact-submit">
+          <button
+            type="submit"
+            className="contact-submit"
+            disabled={loading}
+          >
             <span>➤</span>
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
+
+          {submitted && (
+            <div
+              className="success-message"
+              role="status"
+            >
+              ✅ Thank you! Your message has been sent successfully.
+            </div>
+          )}
+
+          {error && (
+            <div
+              className="error-message"
+              role="alert"
+            >
+              {error}
+            </div>
+          )}
         </form>
       </div>
     </section>
