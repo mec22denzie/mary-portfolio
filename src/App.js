@@ -11,7 +11,7 @@ import SkillPage from "./pages/SkillPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
-import PortfolioTour from "./components/PortfolioTour";
+/* import PortfolioTour from "./components/PortfolioTour"; */
 import CareerTrackerCaseStudy from "./components/CaseStudies/CareerTracker/CareerTrackerCaseStudy";
 
 function App() {
