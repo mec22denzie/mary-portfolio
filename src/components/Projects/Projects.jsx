@@ -19,7 +19,6 @@ const projects = [
     tech: "Wordpress",
     live: "https://maryportfolio.rf.gd",
     github: "https://github.com/mec22denzie/careerTracker",
-    github: "https://github.com/mec22denzie/careerTracker",
   },
   {
     title: "Student Shop",
