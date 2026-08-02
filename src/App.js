@@ -25,7 +25,7 @@ function App() {
 
       <Navbar />
 
-      <PortfolioTour />
+   {/*    <PortfolioTour /> */}
 
       <main className="site-content">
         <Routes>
