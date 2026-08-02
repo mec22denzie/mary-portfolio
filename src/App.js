@@ -12,6 +12,7 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import PortfolioTour from "./components/PortfolioTour";
+import CareerTrackerCaseStudy from "./components/CaseStudies/CareerTracker/CareerTrackerCaseStudy";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/tracker" element={<CareerTrackerCaseStudy />} />
         </Routes>
       </main>
 

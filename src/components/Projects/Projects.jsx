@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 
 const projects = [
@@ -8,6 +10,7 @@ const projects = [
     tech: "React • CSS • JavaScript",
     live: "https://career-tracker-7ttg.vercel.app/",
     github: "https://github.com/mec22denzie/careerTracker",
+    caseStudy: "/tracker"
   },
   {
     title: "Personal Portfolio",
@@ -15,6 +18,7 @@ const projects = [
       "A responsive career management application that helps users organize job applications and monitor their progress.",
     tech: "Wordpress",
     live: "https://maryportfolio.rf.gd",
+    github: "https://github.com/mec22denzie/careerTracker",
     github: "https://github.com/mec22denzie/careerTracker",
   },
   {
@@ -86,6 +90,12 @@ function Projects() {
                 >
                   GitHub
                 </a>
+                <Link
+                  to={project.caseStudy}
+                  className="project-button"
+                >
+                  Case Study
+                </Link>
               </div>
             </article>
           ))}

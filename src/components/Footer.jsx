@@ -16,13 +16,13 @@ function Footer() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
 
-        <a
+     {/*    <a
           href="#home"
           className="back-to-top"
           aria-label="Back to top"
         >
           ↑
-        </a>
+        </a> */}
       </div>
     </footer>
   );

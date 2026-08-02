@@ -14,7 +14,9 @@ function Hero() {
 
           <h2 className="hero-role">System Design Engineer/ 
             <br />
-            Web Developer
+            Front-End Developer
+            <br />
+            Junior Software Engineer
           </h2>
 
           <p className="hero-description">
